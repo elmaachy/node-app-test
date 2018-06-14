@@ -42,7 +42,12 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page'
   });
 });
-
+//// project
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project page added in Chalengers'
+  });
+});
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
